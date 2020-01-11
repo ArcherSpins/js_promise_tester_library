@@ -20,7 +20,6 @@ function useFetch(url = '') {
       const response = await fetch(url + params(), data());
       const result = await response.json();
       setResponse(result);
-      setError(error);
 
       return result;
     } catch (error) {
